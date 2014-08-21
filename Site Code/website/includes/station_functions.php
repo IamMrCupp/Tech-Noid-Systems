@@ -16,7 +16,7 @@
 function SAMradio_playing() {
 	global $starttime, $curtime, $secsRemain, $artist, $title;
 	// Open the database connection to SAM
-	$connection = mysql_connect("master.tech-noid.net", "streaminfo", "t3ch-n01d-inf0z");
+	$connection = mysql_connect("master.tech-noid.net", "", "");
 	mysql_select_db("samdb", $connection);
 
    	$result = mysql_query ("SELECT artist, title, duration, date_played, album FROM historylist ORDER BY date_played DESC LIMIT 1", $connection);
@@ -43,7 +43,7 @@ function SAMradio_playing() {
 */
 function SAMradio_queue() {
 	// Open the database connection to SAM
-	$connection = mysql_connect("master.tech-noid.net", "streaminfo", "t3ch-n01d-inf0z");
+	$connection = mysql_connect("master.tech-noid.net", "", "");
 	mysql_select_db("samdb", $connection);
 		
 	// Run the query on the database through the connection
@@ -64,7 +64,7 @@ function SAMradio_queue() {
 */
 function SAMradio_recent() {
 	// Open the database connection to SAM
-	$connection = mysql_connect("master.tech-noid.net", "streaminfo", "t3ch-n01d-inf0z");
+	$connection = mysql_connect("master.tech-noid.net", "", "");
 	mysql_select_db("samdb", $connection);
 	
 	// Run the query on the winestore through the connection
@@ -83,7 +83,7 @@ function SAMradio_recent() {
 
 function SAMradio_listeners() {
 	// Open the database connection to SAM
-	$connection = mysql_connect("master.tech-noid.net", "streaminfo", "t3ch-n01d-inf0z");
+	$connection = mysql_connect("master.tech-noid.net", "", "");
 	mysql_select_db("samdb", $connection);
 	
 	
