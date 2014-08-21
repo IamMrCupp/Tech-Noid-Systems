@@ -12,9 +12,15 @@ PAL scripts:
 * SAM Broadcaster Live Show
 * Listener Counts
 * Skip Track
+* Ratings Check
+* Stream Title Banner
 
 
 PHP Items:
-* Website Code
-* Podcast Creator
-* MP3 Tagger
+* Stream Archiver (RSS creator, MP3 tagger)
+* Website Stuff
+*   * Site Code
+*   * Fonts
+*   * Graphics
+*   * DJ Apps (for djs to use on their systems)
+*   * DJ Queue Interface
